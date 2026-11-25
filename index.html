@@ -93,10 +93,11 @@ a.ibtn{text-decoration:none}
 <div id="ctl">
  <div id="prog"><div class="fill"></div></div>
  <div id="row">
-  <button class="chap" data-i="0">🏔️ 珠穆朗玛</button>
-  <button class="chap" data-i="1">🐪 金字塔</button>
-  <button class="chap" data-i="2">🧱 长城</button>
-  <button class="chap" data-i="3">🌍 太空</button>
+  <button class="chap" data-i="0">🧑‍🚀 机组</button>
+  <button class="chap" data-i="1">🏔️ 珠穆朗玛</button>
+  <button class="chap" data-i="2">🐪 金字塔</button>
+  <button class="chap" data-i="3">🧱 长城</button>
+  <button class="chap" data-i="4">🌍 太空</button>
   <div id="spacer"></div>
   <span id="time">00:00 / 00:00</span>
   <button class="ibtn" id="pp" title="播放/暂停">⏸</button>
@@ -110,10 +111,11 @@ a.ibtn{text-decoration:none}
 <script>
 // ===== 章节时间轴（拼接后由 ffmpeg 实际时长确定）=====
 const CHAPTERS=[
- {name:"珠穆朗玛",start:0.0,end:9.53},
- {name:"金字塔",start:9.53,end:18.56},
- {name:"长城",start:18.56,end:27.59},
- {name:"太空",start:27.59,end:37.12}
+ {name:"机组",start:0.0,end:4.5},
+ {name:"珠穆朗玛",start:4.5,end:13.53},
+ {name:"金字塔",start:13.53,end:22.56},
+ {name:"长城",start:22.56,end:31.59},
+ {name:"太空",start:31.59,end:41.12}
 ];
 const v=document.getElementById('film'),fill=document.querySelector('#prog .fill'),
  timeEl=document.getElementById('time'),pp=document.getElementById('pp'),
